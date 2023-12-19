@@ -40,6 +40,9 @@ html::-webkit-scrollbar-thumb{
 body{
     background: var(--bg);
 }
+section{
+    padding: 2rem 7%;
+}
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -169,6 +172,45 @@ body{
     text-align: center;
     
 }
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(/assets/img/logo.jpg) no-repeat;
+    
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem;
+    color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries */
 @media(max-width:991px){
     html{
@@ -176,6 +218,9 @@ body{
     }
     .header{
         padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
     }
 }
 @media(max-width:768){
@@ -209,8 +254,5 @@ body{
 @media(max-width:450){
     html{
         font-size: 50%;
-    }
-    .header{
-        padding: 1.5rem 2rem;
     }
 }
