@@ -2,7 +2,7 @@
 
 :root{
     --main-color:#d3ad7f;
-    --block:#13131a;
+    --black:#13131a;
     --bg:#010103;
     --border:.1em solid rgba(255,255,255,0.5);
 }
@@ -39,6 +39,18 @@ html::-webkit-scrollbar-thumb{
 }
 body{
     background: var(--bg);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: 0.2rem;
 }
 .header{
     background: var(--bg);
@@ -85,12 +97,15 @@ body{
     width: 50rem;
     height: 5rem;
     display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
 }
 .header .search-form input{
     height: 100%;
     width: 100%;
     font-size: 1.6;
-    color: var(--block);
+    color: var(--black);
     padding: 1rem;
     text-transform: none;
 }
@@ -98,8 +113,51 @@ body{
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
-    color: var(--block);
+    color: var(--black);
 }
 .header .search-form label:hover{
     color: var(--main-color);
+}
+.header .cart-items-container{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+.header .cart-items-container .cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.header .cart-items-container .cart-item .fa-items{
+    position: absolute;top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+
+}
+.header .cart-items-container .cart-item .fa-items:hover{
+    color: var(--main-color);
+}
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+
+}
+.header .cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+}
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.cart-item .cont
+.header .cart-items-container{
+    
 }
