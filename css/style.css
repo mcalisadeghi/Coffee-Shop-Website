@@ -433,14 +433,16 @@ section{
     object-fit: cover;
     width: 100%;
 }
-.blogs .box-container .box:hover .box img{
+.blogs .box-container .box:hover .image img{
     transform: scale(1.2);
 }
-
-.blogs .box-container .box img .content .title{
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+.blogs .box-container .box .content .title{
     font-size: 2.5rem;
     line-height: 1.5;
-    color: #010103;
+    color: #fff;
 }
 
 .blogs .box-container .box .content .title:hover{
