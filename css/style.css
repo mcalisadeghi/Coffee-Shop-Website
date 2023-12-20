@@ -17,10 +17,7 @@
     text-transform: capitalize;
     transition: 0.2s linear;
 }
-/* .logo{
-    width: 100px;
-    height: 50px;
-} */
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -192,11 +189,14 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(/assets/img/logo.jpg) no-repeat;
+    background:url(/assets/img/home2.jpg) center/cover no-repeat;
     
 }
+.home .content {
+    max-width: 60rem;
+}
 .home .content h3{
-    font-size: 6rem;
+    font-size: 5rem;
     text-transform: uppercase;
     color: #fff;
 }
@@ -216,6 +216,10 @@ section{
     flex-wrap: wrap;
 }
 .about .row .image{
+    
+    flex: 1 1 45rem;
+}
+.about .row .image img{
     width: 100%;
 }
 .about .row .content{
