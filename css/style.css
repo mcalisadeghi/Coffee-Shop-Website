@@ -71,6 +71,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1.5rem 7%;
     border-bottom: var(--border);
     position: fixed;
     top: 0;
@@ -79,7 +80,10 @@ section{
     z-index: 1000;
 }
 .header .logo img{
-    height: 6rem;
+    height: 7rem;
+    background-color: wheat;
+    /* border-radius: 50%; */
+
 }
 .header .navbar a{
     margin: 0 1rem;
